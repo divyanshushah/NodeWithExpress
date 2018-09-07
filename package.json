@@ -1,0 +1,36 @@
+{
+  "name": "nodewithexpress",
+  "version": "1.0.0",
+  "description": "This is node setup with Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/bootstrap.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.9.4",
+    "nodemon": "^1.18.4",
+    "npm": "^1.9.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "*.test.ts"
+    ],
+    "delay": "2500",
+    "execMap": {
+      "ts": "ts-node"
+    }
+  }
+}
